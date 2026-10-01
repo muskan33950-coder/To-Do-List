@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+    </style>
+</head>
+<body>
+<header>
+    <img src=" https://cdni.iconscout.com/illustration/premium/thumb/young-business-woman-working-on-todo-list-illustration-download-in-svg-png-gif-file-formats--lady-to-do-check-work-schedule-pack-illustrations-2206521.png " alt="graphics">
+    <h1>Organise your work<br> & <br> daily life</h1>
+</header>
+<!-- to do list container -->
+    <div class="container">
+        
+        <h1>To-Do List <img src="https://cdn-icons-png.freepik.com/512/8019/8019198.png"></h1>
+        <div class="input_container">
+            <input  id="input-box" placeholder="Add a new task" class="task">
+            <button onclick="addTask()" class="add_button">
+               <i class="fa-solid fa-circle-plus"></i>
+            </button>
+        </div>
+        
+        <ul  id="taskList" class="task-List">
+
+        </ul>
+         <!-- pop up box -->
+     <div class="main-nav">
+<div id="successModal">
+    <div id="successModal1">
+<span id="successModal2">
+     &#10004;
+</span>
+<h2>Yay...</h2>
+<p>you have successfully added a task!</p>
+<!-- <button id="buttonok" onclick="document.getElementById('successModal')"> 
+    ok</button> -->
+    <button id="buttonok" onclick="hideMainNav()">ok</button>
+
+    </div>
+</div>
+</div>
+ 
+      <div class="mobile-nav">
+<div id="successModal">
+    <div id="successModal1">
+<span id="successModal2">
+    &#10004;
+</span>
+<h2>Oops...</h2>
+<p>you have successfully deleted a task!</p>
+<!-- <button id="buttonok" onclick="showSuccessModal" >
+    ok</button> -->
+    <button id="buttonok" onclick="hideMobileNav()">ok</button>
+
+    </div>
+</div>
+</div>
+    </div>
+   
+
+<script src="script.js"></script>
+</body>
+</html>
